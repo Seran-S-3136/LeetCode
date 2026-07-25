@@ -19,9 +19,6 @@ class Solution {
         for (int i = k; i < n; i++) {
             count += vowels[s.charAt(i)] - vowels[s.charAt(i - k)];
             maxVowels = Math.max(maxVowels, count);
-            if (maxVowels == k) {
-                return maxVowels; 
-            }
         }
         return maxVowels;
     }
